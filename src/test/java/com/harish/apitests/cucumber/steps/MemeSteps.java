@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class MemeSteps {
+public class MemeSteps extends BaseStep {
 	
 	@Given("^the following memes$")
 	public void givenTheMemes(List<Map<String, String>> memes) {

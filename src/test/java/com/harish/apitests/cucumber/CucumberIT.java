@@ -10,12 +10,14 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.spring.CucumberContextConfiguration;
 
 @RunWith(Cucumber.class)
-@CucumberContextConfiguration
-@SpringBootTest(classes = {CucumberMavenApiApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@CucumberContextConfiguration
+//@SpringBootTest(classes = {CucumberMavenApiApplication.class}, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @CucumberOptions(
 		plugin = {"pretty"},
-		tags="",
-		features="src/test/resources/features")
+		//tags="@meme",
+		features="src/test/resources/features"
+		//glue={"com.harish.apitests.cucumber.steps"}
+		)
 public class CucumberIT {
 
 }

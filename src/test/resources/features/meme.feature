@@ -17,11 +17,16 @@
 ## (Comments)
 #Sample Feature Definition Template
 Feature: Meme feature
-
+@meme
   Scenario: A user gets the meme
     Given the following memes
       | meme          | darkness |
       | olong johnson |        1 |
       | classic angus |        2 |
     When the user requests all the memes
-    Then all the memes are returned  
+    Then all the memes are returned
+
+@add
+  Scenario: Add two numbers
+    When add two numbers 3 and 4
+    Then verify the result is 7
