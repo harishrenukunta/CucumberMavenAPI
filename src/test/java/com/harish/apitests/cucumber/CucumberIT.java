@@ -1,13 +1,9 @@
 package com.harish.apitests.cucumber;
 
 import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import com.harish.apitests.CucumberMavenApiApplication;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
-import io.cucumber.spring.CucumberContextConfiguration;
 
 @RunWith(Cucumber.class)
 //@CucumberContextConfiguration
