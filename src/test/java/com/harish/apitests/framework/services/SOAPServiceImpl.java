@@ -7,7 +7,9 @@ import javax.xml.soap.SOAPException;
 
 import com.harish.apitests.framework.model.SoapRequest;
 import com.harish.apitests.framework.model.SoapResponse;
+import org.springframework.stereotype.Component;
 
+@Component
 public class SOAPServiceImpl implements SOAPService{
 	
 	private SoapRequestBuilder requestBuilder;

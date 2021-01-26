@@ -7,7 +7,8 @@ import java.util.stream.Stream;
 
 public enum ServiceName {
 	
-	TRANSACTION_SEARCH("transaction search");
+	TRANSACTION_SEARCH("transaction search"),
+	CASE_DETAILS("case details");
 	
 	private String wsName;
 
